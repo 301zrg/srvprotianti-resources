@@ -17,6 +17,9 @@ Lua/scripts/禁限表以及网页裁剪卡池是独立部署输入，不替代�
 
 使用包含 `catalog-fetch` 的服务端版本，在服务端根目录执行：
 
+下载工具及更新后的指南见 [服务端 PR #5](https://github.com/301zrg/srvprotianti/pull/5)。
+合并前使用 `codex/catalog-lfs-20261011` 分支；合并后可使用包含该改动的 `restructure2`。
+
 ```bash
 sudo apt-get update
 sudo apt-get install -y git git-lfs python3
