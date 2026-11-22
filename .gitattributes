@@ -3,3 +3,5 @@
 /catalog/cards.ja.cdb filter=lfs diff=lfs merge=lfs -text
 /catalog/cards.ko.cdb filter=lfs diff=lfs merge=lfs -text
 /engine/1103-706/cards.cdb filter=lfs diff=lfs merge=lfs -text
+/engine/1103-706/utility.lua -text
+/engine/1103-706/lflist.conf -text
