@@ -1,6 +1,6 @@
 # srvprotianti 公共部署资源
 
-本仓库通过 Git LFS 保存服务端四语言完整查询卡库。服务端仓库是公开 fork，GitHub 的 LFS
+本仓库通过 Git LFS 保存服务端四语言完整查询卡库与独立的在线引擎环境卡池。服务端仓库是公开 fork，GitHub 的 LFS
 接口拒绝向它新增这四份文件，因此资源在这个独立仓库发布。安装、云端测试和校验工具仍归
 [srvprotianti 的 ops 目录](https://github.com/301zrg/srvprotianti/tree/restructure2/ops)。
 
@@ -9,6 +9,10 @@
 `catalog/` 中有 `cards.zh.cdb`、`cards.en.cdb`、`cards.ja.cdb`、`cards.ko.cdb`。
 中文卡库提供权威卡片类型和异画 alias；其他语言补充名称。它们与引擎的两套在线 CDB、
 Lua/scripts/禁限表以及网页裁剪卡池是独立部署输入，不替代实际对战引擎资源。
+
+`engine/1103-706/cards.cdb` 是当前正式服实际加载的 5,267 卡环境库，
+2026-10-12 用户授权后保持原字节发布；大小、SHA 与部署位置见 [引擎卡池说明](engine/1103-706/README.md)。
+它与四语查询库分别固定提交、分别校验；只有这份引擎 CDB 新增到 LFS，没有公开上传引擎程序、私密配置或玩家数据。
 
 2026-10-11 首批资源与服务端 `ops/versions.json` 记录的 SHA256 和大小完全一致，
 这里只发布既有卡库，不改变卡池、对局规则或使用率统计算法。
